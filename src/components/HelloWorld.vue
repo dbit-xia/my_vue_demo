@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <Test02 msg="Test02.msg"></Test02>
+    <Test04 msg="Test02.msg"></Test04>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -34,11 +35,13 @@
 <script>
 
 import Test02 from "@/components/Test02";
+import Test04 from "@/components/Test04";
 
 export default {
   name: 'HelloWorld',
   components: {
-    Test02
+    Test02,
+    Test04
   },
   props: {
     msg: String
