@@ -156,7 +156,7 @@
         // alert(rows.length+' '+Object.keys(svelteTable.$$))
       }
     },
-    mounted: function () { //vue组件渲染挂载后
+    mounted: function () { //vue组件渲染挂载后,需要重装加载svelte组件
       // alert(this.$el.id);
       //重新加载
       svelteTable = new SvelteTable({
