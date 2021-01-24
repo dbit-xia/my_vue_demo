@@ -1,5 +1,5 @@
 <template>
-  <div id="HelloWorld" class="hello">
+  <div class="hello">
     <button v-on:click="deleteRow()">{{buttonText}}</button>
     <SvelteTable></SvelteTable>
     <h1>{{ msg }}</h1>
