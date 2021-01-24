@@ -1,16 +1,27 @@
 <template>
   <div class="hello">
     <button v-on:click="deleteRow()">{{buttonText}}</button>
-    <SvelteTable></SvelteTable>
+    
     <h1>{{ msg }}</h1>
-    <table>
-      <tbody>
-        <tr v-for="row in rows" v-bind:key="row">
-          <td>{{row.id}}</td>
-          <td>{{row.first_name}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div style="display: flex;flex-direction: row">
+      
+      <div id="svelteTable" style="width: 70%">
+        <SvelteTable></SvelteTable>
+      </div>
+        
+      <div style="width: 10%">
+        <table>
+          <tbody>
+          <tr v-for="row in rows" v-bind:key="row">
+            <td>{{row.id}}</td>
+            <td>{{row.first_name}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+    
   </div>
 </template>
 
@@ -160,7 +171,7 @@
       // alert(this.$el.id);
       //重新加载
       svelteTable = new SvelteTable({
-        target: this.$el,
+        target: document.getElementById('svelteTable'),
         props: {
           columns,
           rows,

@@ -1,5 +1,6 @@
 <template>
-  <div id="nav">
+  <div id="nav" style="display: flex;flex-direction: row">
+    <img alt="Vue logo" src="./assets/logo.png" style="height: 50px">
     <router-link to="/">Home</router-link>
     | <router-link to="/about">About</router-link>
     | <router-link to="/Test02">Test02</router-link>
