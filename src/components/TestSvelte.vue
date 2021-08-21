@@ -144,7 +144,7 @@
   })
   
   export default {
-    name: 'HelloWorld',
+    name: 'TestSvelte',
     components: {
       SvelteTable: svelteTable
     },
